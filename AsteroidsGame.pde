@@ -19,17 +19,15 @@ public void draw()
 
 public void keyPressed()
 {
-  if (key == CODED) {
-    if (keyCode == LEFT) {
-      hunter.turn(-5);
-    } else if (keyCode == RIGHT) {
-      hunter.turn(5);
-    } else if (keyCode == UP) {
-      hunter.accelerate(0.5);
-    } else if (keyCode == DOWN){
-      hunter.myXspeed = hunter.myYspeed = 0;
-      hunter.myCenterX = (int)(Math.random() * 400);
-      hunter.myCenterY = (int)(Math.random() * 400);
-    }
+  if (key == 'a') {
+    hunter.turn(-5);
+  } else if (key == 'd') {
+    hunter.turn(5);
+  } else if (key == 'w') {
+    hunter.accelerate(0.5);
+  } else if (key == 'h'){
+    hunter.myXspeed = hunter.myYspeed = 0;
+    hunter.myCenterX = (int)(Math.random() * 400);
+    hunter.myCenterY = (int)(Math.random() * 400);
   }
 }
