@@ -29,5 +29,6 @@ public void keyPressed()
     hunter.myXspeed = hunter.myYspeed = 0;
     hunter.myCenterX = (int)(Math.random() * 400);
     hunter.myCenterY = (int)(Math.random() * 400);
+    hunter.myPointDirection = (int)(Math.random() * 360);
   }
 }
