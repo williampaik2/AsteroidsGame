@@ -26,9 +26,6 @@ public void keyPressed()
   } else if (key == 'w') {
     hunter.accelerate(0.5);
   } else if (key == 'h'){
-    hunter.myXspeed = hunter.myYspeed = 0;
-    hunter.myCenterX = (int)(Math.random() * 400);
-    hunter.myCenterY = (int)(Math.random() * 400);
-    hunter.myPointDirection = (int)(Math.random() * 360);
+    hunter.hyperspace();
   }
 }
