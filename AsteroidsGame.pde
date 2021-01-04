@@ -27,6 +27,9 @@ public void draw()
     if (d < 18){
       comet.remove(i);
     }
+    if (comet.size() == 1){
+        exit();
+    }  
   }
   for (int i = 0; i < fire.size(); i++){
     fire.get(i).move();
@@ -36,7 +39,6 @@ public void draw()
       if (d < 30){
         comet.remove(a);
         fire.remove(i);
-        
         break;
       } 
       if (comet.size() == 1){
